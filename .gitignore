@@ -1,0 +1,6 @@
+# Generated artifacts (re-create with generate_data.py / train.py)
+model.joblib
+land_parcels.csv
+__pycache__/
+.venv/
+*.pyc
