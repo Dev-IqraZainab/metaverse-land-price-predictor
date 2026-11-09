@@ -1,0 +1,17 @@
+{
+  "best_model": "Gradient Boosting",
+  "results": {
+    "Linear Regression": {
+      "MAE_usd": 4894.28,
+      "R2": 0.4619
+    },
+    "Random Forest": {
+      "MAE_usd": 2555.57,
+      "R2": 0.9056
+    },
+    "Gradient Boosting": {
+      "MAE_usd": 1778.6,
+      "R2": 0.9565
+    }
+  }
+}

@@ -29,8 +29,8 @@ Three models were trained on the same 80/20 split (log-transformed target):
 | **Gradient Boosting** 🏆 | **$1,779** | **0.957** |
 
 <p align="center">
-  <img src="pred_vs_actual.png" width="45%" />
-  <img src="feature_importance.png" width="52%" />
+  <img src="pred_vs_actual.svg" width="45%" />
+  <img src="feature_importance.svg" width="52%" />
 </p>
 
 **Key insights:**
@@ -74,8 +74,8 @@ metaverse-land-price-predictor/
 ├── train.py                # Preprocessing, model comparison, charts, saves best model
 ├── predict.py              # CLI: price a single parcel
 ├── metrics.json            # Latest training results
-├── pred_vs_actual.png      # Evaluation chart
-├── feature_importance.png  # What drives price
+├── pred_vs_actual.svg      # Evaluation chart
+├── feature_importance.svg  # What drives price
 └── requirements.txt
 ```
 
