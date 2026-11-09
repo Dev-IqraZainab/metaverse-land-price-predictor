@@ -83,7 +83,7 @@ def main(data_path: str) -> None:
            title=f"{best_name}: R² = {results[best_name]['R2']:.3f}")
     ax.legend()
     fig.tight_layout()
-    fig.savefig("pred_vs_actual.png", dpi=130)
+    fig.savefig("pred_vs_actual.svg")
 
     # ---- Chart 2: feature importance (tree models) ----
     inner = best.regressor_.named_steps["model"]
@@ -95,9 +95,9 @@ def main(data_path: str) -> None:
         imp.plot.barh(ax=ax, color="#00c9ff")
         ax.set(title="Top 10 price drivers", xlabel="Importance")
         fig.tight_layout()
-        fig.savefig("feature_importance.png", dpi=130)
+        fig.savefig("feature_importance.svg")
 
-    print("Saved model.joblib, metrics.json, pred_vs_actual.png, feature_importance.png")
+    print("Saved model.joblib, metrics.json, pred_vs_actual.svg, feature_importance.svg")
 
 
 if __name__ == "__main__":
